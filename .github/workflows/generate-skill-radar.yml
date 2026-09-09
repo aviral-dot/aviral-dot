@@ -1,0 +1,262 @@
+name: Generate Skill Radar
+
+on:
+  schedule:
+    - cron: "45 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate skill radar
+        run: |
+          python - <<'PY'
+          import math
+          import os
+          import xml.etree.ElementTree as ET
+
+          skills = [
+              ("LLM Engineering", 90),
+              ("RAG / Retrieval", 92),
+              ("Agentic AI", 88),
+              ("Backend", 82),
+              ("Data Engineering", 78),
+              ("Cloud / DevOps", 72),
+              ("Evaluation", 80),
+              ("Observability", 78),
+          ]
+
+          width = 900
+          height = 650
+          cx = 450
+          cy = 330
+          radius = 210
+          levels = 5
+
+          svg = ET.Element(
+              "svg",
+              {
+                  "xmlns": "http://www.w3.org/2000/svg",
+                  "viewBox": f"0 0 {width} {height}",
+                  "width": "100%",
+                  "role": "img",
+              },
+          )
+
+          title = ET.SubElement(svg, "title")
+          title.text = "Aviral Bagjani Engineering Focus"
+
+          ET.SubElement(
+              svg,
+              "rect",
+              {
+                  "x": "0",
+                  "y": "0",
+                  "width": str(width),
+                  "height": str(height),
+                  "rx": "20",
+                  "fill": "#ffffff",
+              },
+          )
+
+          heading = ET.SubElement(
+              svg,
+              "text",
+              {
+                  "x": str(cx),
+                  "y": "42",
+                  "text-anchor": "middle",
+                  "font-family": "Arial, sans-serif",
+                  "font-size": "24",
+                  "font-weight": "700",
+                  "fill": "#172554",
+              },
+          )
+          heading.text = "Engineering Focus"
+
+          subtitle = ET.SubElement(
+              svg,
+              "text",
+              {
+                  "x": str(cx),
+                  "y": "68",
+                  "text-anchor": "middle",
+                  "font-family": "Arial, sans-serif",
+                  "font-size": "13",
+                  "fill": "#64748B",
+              },
+          )
+          subtitle.text = "AI Engineering · Backend · Data · Cloud"
+
+          count = len(skills)
+
+          def point(index, r):
+              angle = -math.pi / 2 + (2 * math.pi * index / count)
+              return (
+                  cx + r * math.cos(angle),
+                  cy + r * math.sin(angle),
+              )
+
+          def points_string(points):
+              return " ".join(
+                  f"{x:.2f},{y:.2f}" for x, y in points
+              )
+
+          # Radar grid
+          for level in range(1, levels + 1):
+              r = radius * level / levels
+
+              points = [
+                  point(i, r)
+                  for i in range(count)
+              ]
+
+              ET.SubElement(
+                  svg,
+                  "polygon",
+                  {
+                      "points": points_string(points),
+                      "fill": "none",
+                      "stroke": "#CBD5E1",
+                      "stroke-width": "1",
+                  },
+              )
+
+          # Radar axes
+          for i in range(count):
+              x, y = point(i, radius)
+
+              ET.SubElement(
+                  svg,
+                  "line",
+                  {
+                      "x1": str(cx),
+                      "y1": str(cy),
+                      "x2": str(x),
+                      "y2": str(y),
+                      "stroke": "#E2E8F0",
+                      "stroke-width": "1",
+                  },
+              )
+
+          # Skill polygon
+          skill_points = [
+              point(i, radius * value / 100)
+              for i, (_, value) in enumerate(skills)
+          ]
+
+          ET.SubElement(
+              svg,
+              "polygon",
+              {
+                  "points": points_string(skill_points),
+                  "fill": "#2563EB",
+                  "fill-opacity": "0.16",
+                  "stroke": "#2563EB",
+                  "stroke-width": "3",
+                  "stroke-linejoin": "round",
+              },
+          )
+
+          # Skill points
+          for i, (_, value) in enumerate(skills):
+              x, y = point(i, radius * value / 100)
+
+              ET.SubElement(
+                  svg,
+                  "circle",
+                  {
+                      "cx": str(x),
+                      "cy": str(y),
+                      "r": "5",
+                      "fill": "#2563EB",
+                  },
+              )
+
+          # Labels
+          for i, (name, value) in enumerate(skills):
+              x, y = point(i, radius + 45)
+
+              if x < cx - 20:
+                  anchor = "end"
+              elif x > cx + 20:
+                  anchor = "start"
+              else:
+                  anchor = "middle"
+
+              label = ET.SubElement(
+                  svg,
+                  "text",
+                  {
+                      "x": str(x),
+                      "y": str(y),
+                      "text-anchor": anchor,
+                      "font-family": "Arial, sans-serif",
+                      "font-size": "13",
+                      "font-weight": "600",
+                      "fill": "#1E3A8A",
+                  },
+              )
+              label.text = name
+
+              value_text = ET.SubElement(
+                  svg,
+                  "text",
+                  {
+                      "x": str(x),
+                      "y": str(y + 17),
+                      "text-anchor": anchor,
+                      "font-family": "Arial, sans-serif",
+                      "font-size": "11",
+                      "fill": "#64748B",
+                  },
+              )
+              value_text.text = f"{value}/100"
+
+          # Center label
+          center = ET.SubElement(
+              svg,
+              "text",
+              {
+                  "x": str(cx),
+                  "y": str(cy + 5),
+                  "text-anchor": "middle",
+                  "font-family": "Arial, sans-serif",
+                  "font-size": "13",
+                  "font-weight": "600",
+                  "fill": "#172554",
+              },
+          )
+          center.text = "AI ENGINEERING"
+
+          os.makedirs("assets", exist_ok=True)
+
+          ET.indent(svg, space="  ")
+
+          ET.ElementTree(svg).write(
+              "assets/skill-radar.svg",
+              encoding="utf-8",
+              xml_declaration=True,
+          )
+
+          print("Skill radar generated successfully.")
+          PY
+
+      - name: Commit skill radar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/skill-radar.svg
+
+          git diff --cached --quiet || git commit -m "Update skill radar"
+
+          git push
