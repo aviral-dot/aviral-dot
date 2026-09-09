@@ -77,11 +77,10 @@ My work focuses on turning LLM capabilities into structured, reliable, and produ
 
 <div align="center">
 
+### 🤖 AI Engineering
+
 <a href="https://www.python.org/">
   <img src="https://skillicons.dev/icons?i=python" alt="Python">
-</a>
-<a href="https://fastapi.tiangolo.com/">
-  <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI">
 </a>
 <a href="https://www.langchain.com/">
   <img src="https://skillicons.dev/icons?i=langchain" alt="LangChain">
@@ -92,12 +91,61 @@ My work focuses on turning LLM capabilities into structured, reliable, and produ
 <a href="https://qdrant.tech/">
   <img src="https://skillicons.dev/icons?i=qdrant" alt="Qdrant">
 </a>
+
+<br><br>
+
+`LLM Applications` · `RAG` · `Agentic AI` · `Multi-Agent Systems`  
+`Prompt Engineering` · `Guardrails` · `Evaluation` · `Observability`
+
+<br><br>
+
+### ⚙️ Backend & Data
+
+<a href="https://fastapi.tiangolo.com/">
+  <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI">
+</a>
 <a href="https://www.postgresql.org/">
   <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL">
 </a>
 <a href="https://redis.io/">
   <img src="https://skillicons.dev/icons?i=redis" alt="Redis">
 </a>
+<a href="https://kafka.apache.org/">
+  <img src="https://skillicons.dev/icons?i=kafka" alt="Apache Kafka">
+</a>
+<a href="https://spark.apache.org/">
+  <img src="https://skillicons.dev/icons?i=spark" alt="Apache Spark">
+</a>
+<a href="https://airflow.apache.org/">
+  <img src="https://skillicons.dev/icons?i=airflow" alt="Apache Airflow">
+</a>
+
+<br><br>
+
+### ☁️ Cloud & Engineering
+
+<a href="https://aws.amazon.com/">
+  <img src="https://skillicons.dev/icons?i=aws" alt="AWS">
+</a>
+<a href="https://www.docker.com/">
+  <img src="https://skillicons.dev/icons?i=docker" alt="Docker">
+</a>
+<a href="https://git-scm.com/">
+  <img src="https://skillicons.dev/icons?i=git" alt="Git">
+</a>
+<a href="https://github.com/">
+  <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+</a>
+<a href="https://github.com/features/actions">
+  <img src="https://skillicons.dev/icons?i=githubactions" alt="GitHub Actions">
+</a>
+
+<br><br>
+
+### 🧩 AI Infrastructure
+
+`FastAPI` · `Qdrant` · `PostgreSQL` · `Redis` · `LangSmith`  
+`LLM Gateways` · `Hybrid Retrieval` · `Memory` · `CI/CD`
 
 </div>
 
