@@ -207,7 +207,7 @@ Agentic AI · Multi-Agent Systems · LLM Applications · Automation
 
 <a href="https://github.com/aviral-dot">
   <img
-    src="./assets/activity-graph.svg"
+    src="./assets/activity-graph.gif"
     alt="GitHub Activity Graph"
     width="95%"
   >
