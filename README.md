@@ -83,13 +83,13 @@ My work focuses on turning LLM capabilities into structured, reliable, and produ
   <img src="https://skillicons.dev/icons?i=python" alt="Python">
 </a>
 <a href="https://www.langchain.com/">
-  <img src="https://skillicons.dev/icons?i=langchain" alt="LangChain">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" alt="LangChain">
 </a>
 <a href="https://www.langchain.com/langgraph">
-  <img src="https://skillicons.dev/icons?i=langgraph" alt="LangGraph">
+  <img src="https://img.shields.io/badge/LangGraph-2563EB?style=for-the-badge&logoColor=white" alt="LangGraph">
 </a>
 <a href="https://qdrant.tech/">
-  <img src="https://skillicons.dev/icons?i=qdrant" alt="Qdrant">
+  <img src="https://img.shields.io/badge/Qdrant-D21F3C?style=for-the-badge&logoColor=white" alt="Qdrant">
 </a>
 
 <br><br>
@@ -114,7 +114,7 @@ My work focuses on turning LLM capabilities into structured, reliable, and produ
   <img src="https://skillicons.dev/icons?i=kafka" alt="Apache Kafka">
 </a>
 <a href="https://spark.apache.org/">
-  <img src="https://skillicons.dev/icons?i=spark" alt="Apache Spark">
+  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
 </a>
 <a href="https://airflow.apache.org/">
   <img src="https://skillicons.dev/icons?i=airflow" alt="Apache Airflow">
