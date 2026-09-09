@@ -151,6 +151,20 @@ My work focuses on turning LLM capabilities into structured, reliable, and produ
 
 <br>
 
+## 🧠 Engineering Focus
+
+<div align="center">
+
+<img
+  src="./assets/skill-radar.svg"
+  alt="Aviral Bagjani Engineering Focus Radar"
+  width="720"
+>
+
+</div>
+
+<br>
+
 <div align="center">
 
 **AI Engineering:** LLM Gateways · Guardrails · Evaluation · LangSmith
