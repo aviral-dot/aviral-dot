@@ -1,36 +1,221 @@
-# 💫 About Me:
-# **AI Engineer**
+<!--
+  GitHub Profile README
+  Replace only the placeholders marked with [YOUR_*].
+-->
 
-### **AI Engineering Intern @ Zeepty | B.Tech ECE ’26 @ IIIT Bhagalpur**
+<div align="center">
 
-> **Building production-oriented AI systems with LLMs, RAG, and multi-agent architectures.**
+  <!-- Responsive Light/Dark Banner -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="header-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="header-light.png">
+    <img src="header-light.png" alt="Aviral Bagjani banner" width="100%">
+  </picture>
 
-Experienced in designing **AI applications and intelligent systems** with **Python, FastAPI, LangChain, LangGraph, Qdrant, PostgreSQL, Redis, LLM gateways, guardrails, evaluation, and observability**.
+  <br><br>
 
-Also experienced in building **real-time data pipelines and scalable infrastructure** using **Kafka, Spark, Airflow, AWS, and Docker**.
+  # Hey there, I'm Aviral Bagjani 👋
+
+  <a href="https://github.com/aviral-dot">
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=800&lines=AI+Engineer+%7C+AI+Engineering+Intern+%40+Zeepty;Building+Production-Oriented+LLM+Applications;RAG+Systems+%7C+Agentic+AI+%7C+Multi-Agent+Systems;Focused+on+Production+AI+Engineering" alt="Typing SVG">
+  </a>
+
+  <br><br>
+
+  <a href="https://github.com/aviral-dot">
+    <img src="https://img.shields.io/github/followers/aviral-dot?label=Followers&style=for-the-badge&color=2563EB&labelColor=0F172A" alt="GitHub followers">
+  </a>
+  <a href="https://github.com/aviral-dot">
+    <img src="https://img.shields.io/github/stars/aviral-dot?label=Stars&style=for-the-badge&color=3B82F6&labelColor=0F172A" alt="GitHub stars">
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=aviral-dot&style=for-the-badge&color=2563EB&label=PROFILE+VIEWS" alt="Profile views">
+
+</div>
+
 <br>
 
+## 👨‍💻 About Me
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/aviral_0803) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/aviral bagjani) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/avi_0803) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/abj_0803) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:aviralbharti832002@gmail.com) 
+<table>
+<tr>
+<td width="65%" valign="top">
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka) ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=aviral-dot&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=aviral-dot&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=aviral-dot&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+I'm **Aviral Bagjani**, an aspiring **AI Engineer** focused on building practical, production-oriented AI systems.
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=aviral-dot&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4)
+- 🎓 **B.Tech ECE '26 @ IIIT Bhagalpur**
+- 💼 **AI Engineering Intern @ Zeepty**
+- 🤖 Focused on **LLM applications, RAG systems, Agentic AI, and multi-agent systems**
+- 🏗️ Interested in **production AI engineering**
+- 🚀 Building systems around retrieval, agents, LLM infrastructure, guardrails, evaluation, and observability
+- 🎯 Seeking **Fresher AI Engineer roles**
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+My work focuses on turning LLM capabilities into structured, reliable, and production-oriented AI applications.
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=aviral-dot&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+</td>
 
----
-[![](https://komarev.com/ghpvc/?username=aviral-dot&icon=8&color=1)](https://visitcount.itsvg.in)
+<td width="35%" align="center" valign="middle">
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<img src="avira_image.png" width="220" alt="Aviral Bagjani">
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## 🧠 Core Focus
+
+<div align="center">
+
+`LLM Applications` &nbsp; `RAG Systems` &nbsp; `Agentic AI` &nbsp; `Multi-Agent Systems` &nbsp; `Production AI Engineering`
+
+</div>
+
+<br>
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<a href="https://www.python.org/">
+  <img src="https://skillicons.dev/icons?i=python" alt="Python">
+</a>
+<a href="https://fastapi.tiangolo.com/">
+  <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI">
+</a>
+<a href="https://www.langchain.com/">
+  <img src="https://skillicons.dev/icons?i=langchain" alt="LangChain">
+</a>
+<a href="https://www.langchain.com/langgraph">
+  <img src="https://skillicons.dev/icons?i=langgraph" alt="LangGraph">
+</a>
+<a href="https://qdrant.tech/">
+  <img src="https://skillicons.dev/icons?i=qdrant" alt="Qdrant">
+</a>
+<a href="https://www.postgresql.org/">
+  <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL">
+</a>
+<a href="https://redis.io/">
+  <img src="https://skillicons.dev/icons?i=redis" alt="Redis">
+</a>
+
+</div>
+
+<br>
+
+<div align="center">
+
+**AI Engineering:** LLM Gateways · Guardrails · Evaluation · LangSmith
+
+</div>
+
+<br>
+
+## 🚀 Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### RAGFury
+
+**Production-oriented agentic knowledge retrieval / RAG system**
+
+A focused project around building production-oriented retrieval and RAG capabilities for knowledge-intensive AI applications.
+
+**Focus:**  
+RAG · Retrieval · Agentic AI · Production AI Engineering
+
+</td>
+
+<td width="50%" valign="top">
+
+### AgentFlow
+
+**Agentic research/content automation platform**
+
+A platform focused on using agentic workflows for research and content automation.
+
+**Focus:**  
+Agentic AI · Multi-Agent Systems · LLM Applications · Automation
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## 📊 GitHub Activity
+
+<div align="center">
+
+<a href="https://github.com/aviral-dot">
+  <img src="https://streak-stats.demolab.com?user=aviral-dot&theme=default&hide_border=true&ring=EF93C4&fire=FF69B4&currStreakLabel=2563EB" alt="GitHub Streak">
+</a>
+
+<br><br>
+
+<a href="https://github.com/aviral-dot">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aviral-dot&bg_color=ffffff&color=2563EB&line=FF69B4&point=EF93C4&area=true&hide_border=true" alt="GitHub Activity Graph" width="95%">
+</a>
+
+</div>
+
+<br>
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<!-- GitHub Action:
+     Configure a workflow to generate:
+     github-contribution-grid-snake.svg
+-->
+
+<img src="https://raw.githubusercontent.com/aviral-dot/aviral-dot/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake">
+
+</div>
+
+<br>
+
+## 🤝 Connect With Me
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/aviral-bagjani-a02049259/">
+  <img src="https://img.shields.io/badge/LinkedIn-2563EB?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+
+<a href="[YOUR_X_URL]">
+  <img src="https://img.shields.io/badge/X-2563EB?style=for-the-badge&logo=x&logoColor=white" alt="X">
+</a>
+
+<a href="[YOUR_INSTAGRAM_URL]">
+  <img src="https://img.shields.io/badge/Instagram-2563EB?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+</a>
+
+<a href="[YOUR_TIKTOK_URL]">
+  <img src="https://img.shields.io/badge/TikTok-2563EB?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok">
+</a>
+
+<a href="[YOUR_YOUTUBE_URL]">
+  <img src="https://img.shields.io/badge/YouTube-2563EB?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+</a>
+
+<a href="mailto:aviralbharti832002@gmail.com">
+  <img src="https://img.shields.io/badge/Email-2563EB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+
+</div>
+
+<br><br>
+
+<div align="center">
+
+### Building AI systems from ideas to production.
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=2563EB&height=120&section=footer" width="100%" alt="Footer">
+
+</div>
