@@ -1,5 +1,14 @@
 # 💫 About Me:
-AI Engineer | AI Engineering Intern @ Zeepty | B.Tech ECE ’26 @ IIIT Bhagalpur<br><br>Building production-oriented AI systems with LLMs, RAG, and multi-agent architectures. Experienced in designing AI applications with Python, FastAPI, LangChain, LangGraph, Qdrant, PostgreSQL, Redis, LLM gateways, guardrails, evaluation, and observability. Also experienced with real-time data pipelines using Kafka, Spark, Airflow, AWS, and Docker.<br>
+# **AI Engineer**
+
+### **AI Engineering Intern @ Zeepty | B.Tech ECE ’26 @ IIIT Bhagalpur**
+
+> **Building production-oriented AI systems with LLMs, RAG, and multi-agent architectures.**
+
+Experienced in designing **AI applications and intelligent systems** with **Python, FastAPI, LangChain, LangGraph, Qdrant, PostgreSQL, Redis, LLM gateways, guardrails, evaluation, and observability**.
+
+Also experienced in building **real-time data pipelines and scalable infrastructure** using **Kafka, Spark, Airflow, AWS, and Docker**.
+<br>
 
 
 ## 🌐 Socials:
