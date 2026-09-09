@@ -1,0 +1,189 @@
+name: Generate Activity Graph
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate activity graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          from datetime import datetime, timedelta
+
+          token = os.environ["GITHUB_TOKEN"]
+          username = os.environ["GITHUB_USERNAME"]
+
+          query = """
+          query($login: String!, $from: DateTime!, $to: DateTime!) {
+            user(login: $login) {
+              contributionsCollection(from: $from, to: $to) {
+                contributionCalendar {
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+
+          to_date = datetime.utcnow()
+          from_date = to_date - timedelta(days=365)
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "login": username,
+                  "from": from_date.isoformat() + "Z",
+                  "to": to_date.isoformat() + "Z"
+              }
+          }).encode()
+
+          request = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=payload,
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "github-activity-graph"
+              }
+          )
+
+          with urllib.request.urlopen(request) as response:
+              data = json.loads(response.read())
+
+          weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+
+          days = []
+          for week in weeks:
+              for day in week["contributionDays"]:
+                  days.append(day)
+
+          max_count = max((d["contributionCount"] for d in days), default=1)
+
+          width = 1100
+          height = 300
+
+          left = 55
+          top = 55
+          cell = 14
+          gap = 3
+
+          svg = ET.Element(
+              "svg",
+              {
+                  "xmlns": "http://www.w3.org/2000/svg",
+                  "viewBox": f"0 0 {width} {height}",
+                  "width": "100%",
+                  "role": "img"
+              }
+          )
+
+          title = ET.SubElement(svg, "title")
+          title.text = f"{username} GitHub Activity"
+
+          bg = ET.SubElement(
+              svg,
+              "rect",
+              {
+                  "x": "0",
+                  "y": "0",
+                  "width": str(width),
+                  "height": str(height),
+                  "rx": "14",
+                  "fill": "#ffffff"
+              }
+          )
+
+          text = ET.SubElement(
+              svg,
+              "text",
+              {
+                  "x": str(left),
+                  "y": "30",
+                  "font-family": "Arial, sans-serif",
+                  "font-size": "18",
+                  "font-weight": "600",
+                  "fill": "#2563EB"
+              }
+          )
+
+          text.text = "GitHub Activity"
+
+          for i, day in enumerate(days):
+              week = i // 7
+              weekday = i % 7
+
+              count = day["contributionCount"]
+
+              if count == 0:
+                  fill = "#E0F2FE"
+              elif count <= max_count * 0.25:
+                  fill = "#BAE6FD"
+              elif count <= max_count * 0.50:
+                  fill = "#7DD3FC"
+              elif count <= max_count * 0.75:
+                  fill = "#38BDF8"
+              else:
+                  fill = "#2563EB"
+
+              x = left + week * (cell + gap)
+              y = top + weekday * (cell + gap)
+
+              ET.SubElement(
+                  svg,
+                  "rect",
+                  {
+                      "x": str(x),
+                      "y": str(y),
+                      "width": str(cell),
+                      "height": str(cell),
+                      "rx": "3",
+                      "fill": fill
+                  }
+              )
+
+          ET.indent(svg, space="  ")
+
+          os.makedirs("assets", exist_ok=True)
+
+          ET.ElementTree(svg).write(
+              "assets/activity-graph.svg",
+              encoding="utf-8",
+              xml_declaration=True
+          )
+
+          print("Activity graph generated successfully.")
+          PY
+
+      - name: Commit activity graph
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/activity-graph.svg
+
+          git diff --cached --quiet || git commit -m "Update activity graph"
+
+          git push
