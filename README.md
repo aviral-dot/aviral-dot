@@ -167,16 +167,22 @@ Agentic AI · Multi-Agent Systems · LLM Applications · Automation
 
 <div align="center">
 
-<!-- GitHub Action:
-     Configure a workflow to generate:
-     github-contribution-grid-snake.svg
--->
-
-<img src="https://raw.githubusercontent.com/aviral-dot/aviral-dot/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake">
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/aviral-dot/aviral-dot/gh-pages/github-contribution-grid-snake-dark.svg"
+  >
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/aviral-dot/aviral-dot/gh-pages/github-contribution-grid-snake.svg"
+  >
+  <img
+    src="https://raw.githubusercontent.com/aviral-dot/aviral-dot/gh-pages/github-contribution-grid-snake.svg"
+    alt="GitHub Contribution Snake"
+  >
+</picture>
 
 </div>
-
-<br>
 
 ## 🤝 Connect With Me
 
