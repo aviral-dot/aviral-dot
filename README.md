@@ -155,11 +155,7 @@ My work focuses on turning LLM capabilities into structured, reliable, and produ
 
 <div align="center">
 
-<img
-  src="./assets/skill-radar.svg"
-  alt="Aviral Bagjani Engineering Focus Radar"
-  width="720"
->
+<img src="./assets/skill-radar.svg" alt="Aviral Bagjani Engineering Focus Radar" width="720">
 
 </div>
 
