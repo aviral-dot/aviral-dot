@@ -51,11 +51,6 @@ def polygon_points(radius):
 
 fig, ax = plt.subplots(figsize=(WIDTH, HEIGHT))
 
-ax.set_aspect("equal")
-ax.set_xlim(-1.45, 1.45)
-ax.set_ylim(-1.35, 1.35)
-ax.axis("off")
-
 
 def draw_frame(frame):
     ax.clear()
@@ -89,14 +84,13 @@ def draw_frame(frame):
     )
 
     # ---------------------------------------------------------
-    # Phase 1: Radar grid
+    # Phase 1 — Radar grid
     # ---------------------------------------------------------
 
     grid_progress = min(1.0, frame / 18)
 
     for level in range(1, 6):
         r = RADIUS * level / 5
-
         points = polygon_points(r * grid_progress)
 
         if grid_progress > 0:
@@ -113,7 +107,7 @@ def draw_frame(frame):
             )
 
     # ---------------------------------------------------------
-    # Phase 2: Radar axes
+    # Phase 2 — Radar axes
     # ---------------------------------------------------------
 
     axis_progress = min(
@@ -131,7 +125,7 @@ def draw_frame(frame):
         )
 
     # ---------------------------------------------------------
-    # Phase 3: Skill polygon
+    # Phase 3 — Skill polygon
     # ---------------------------------------------------------
 
     polygon_progress = min(
@@ -168,7 +162,7 @@ def draw_frame(frame):
         )
 
     # ---------------------------------------------------------
-    # Phase 4: Skill points
+    # Phase 4 — Skill points
     # ---------------------------------------------------------
 
     point_progress = min(
@@ -192,7 +186,7 @@ def draw_frame(frame):
             )
 
     # ---------------------------------------------------------
-    # Phase 5: Labels
+    # Phase 5 — Labels
     # ---------------------------------------------------------
 
     label_progress = min(
