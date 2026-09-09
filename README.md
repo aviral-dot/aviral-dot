@@ -204,7 +204,11 @@ Agentic AI · Multi-Agent Systems · LLM Applications · Automation
 <br><br>
 
 <a href="https://github.com/aviral-dot">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aviral-dot&bg_color=ffffff&color=2563EB&line=FF69B4&point=EF93C4&area=true&hide_border=true" alt="GitHub Activity Graph" width="95%">
+  <img
+    src="./assets/activity-graph.svg"
+    alt="GitHub Activity Graph"
+    width="95%"
+  >
 </a>
 
 </div>
