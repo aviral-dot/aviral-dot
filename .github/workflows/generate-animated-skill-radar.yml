@@ -1,0 +1,42 @@
+name: Generate Animated Skill Radar
+
+on:
+  schedule:
+    - cron: "45 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install animation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib pillow
+
+      - name: Generate animated radar
+        run: |
+          python scripts/generate_skill_radar.py
+
+      - name: Commit animated radar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/skill-radar.gif
+
+          git diff --cached --quiet || git commit -m "Update animated skill radar"
+
+          git push
