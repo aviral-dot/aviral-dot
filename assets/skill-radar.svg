@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="100%" role="img">
+  <title>Aviral Bagjani Engineering Focus</title>
+  <rect x="0" y="0" width="900" height="650" rx="20" fill="#ffffff" />
+  <text x="450" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172554">Engineering Focus</text>
+  <text x="450" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748B">AI Engineering · Backend · Data · Cloud</text>
+  <polygon points="450.00,288.00 479.70,300.30 492.00,330.00 479.70,359.70 450.00,372.00 420.30,359.70 408.00,330.00 420.30,300.30" fill="none" stroke="#CBD5E1" stroke-width="1" />
+  <polygon points="450.00,246.00 509.40,270.60 534.00,330.00 509.40,389.40 450.00,414.00 390.60,389.40 366.00,330.00 390.60,270.60" fill="none" stroke="#CBD5E1" stroke-width="1" />
+  <polygon points="450.00,204.00 539.10,240.90 576.00,330.00 539.10,419.10 450.00,456.00 360.90,419.10 324.00,330.00 360.90,240.90" fill="none" stroke="#CBD5E1" stroke-width="1" />
+  <polygon points="450.00,162.00 568.79,211.21 618.00,330.00 568.79,448.79 450.00,498.00 331.21,448.79 282.00,330.00 331.21,211.21" fill="none" stroke="#CBD5E1" stroke-width="1" />
+  <polygon points="450.00,120.00 598.49,181.51 660.00,330.00 598.49,478.49 450.00,540.00 301.51,478.49 240.00,330.00 301.51,181.51" fill="none" stroke="#CBD5E1" stroke-width="1" />
+  <line x1="450" y1="330" x2="450.0" y2="120.0" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="598.492424049175" y2="181.50757595082504" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="660.0" y2="330.0" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="598.492424049175" y2="478.49242404917493" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="450.0" y2="540.0" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="301.50757595082507" y2="478.492424049175" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="240.0" y2="330.0" stroke="#E2E8F0" stroke-width="1" />
+  <line x1="450" y1="330" x2="301.50757595082496" y2="181.50757595082504" stroke="#E2E8F0" stroke-width="1" />
+  <polygon points="450.00,141.00 586.61,193.39 634.80,330.00 571.76,451.76 450.00,493.80 343.09,436.91 282.00,330.00 334.18,214.18" fill="#2563EB" fill-opacity="0.16" stroke="#2563EB" stroke-width="3" stroke-linejoin="round" />
+  <circle cx="450.0" cy="141.0" r="5" fill="#2563EB" />
+  <circle cx="586.613030125241" cy="193.38696987475905" r="5" fill="#2563EB" />
+  <circle cx="634.8" cy="330.0" r="5" fill="#2563EB" />
+  <circle cx="571.7637877203235" cy="451.7637877203235" r="5" fill="#2563EB" />
+  <circle cx="450.0" cy="493.8" r="5" fill="#2563EB" />
+  <circle cx="343.085454684594" cy="436.914545315406" r="5" fill="#2563EB" />
+  <circle cx="282.0" cy="330.0" r="5" fill="#2563EB" />
+  <circle cx="334.17590924164347" cy="214.17590924164352" r="5" fill="#2563EB" />
+  <text x="450.0" y="75.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">LLM Engineering</text>
+  <text x="450.0" y="92.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748B">90/100</text>
+  <text x="630.3122292025696" y="149.6877707974304" text-anchor="start" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">RAG / Retrieval</text>
+  <text x="630.3122292025696" y="166.6877707974304" text-anchor="start" font-family="Arial, sans-serif" font-size="11" fill="#64748B">92/100</text>
+  <text x="705.0" y="330.0" text-anchor="start" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Agentic AI</text>
+  <text x="705.0" y="347.0" text-anchor="start" font-family="Arial, sans-serif" font-size="11" fill="#64748B">88/100</text>
+  <text x="630.3122292025696" y="510.3122292025696" text-anchor="start" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Backend</text>
+  <text x="630.3122292025696" y="527.3122292025696" text-anchor="start" font-family="Arial, sans-serif" font-size="11" fill="#64748B">82/100</text>
+  <text x="450.0" y="585.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Data Engineering</text>
+  <text x="450.0" y="602.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748B">78/100</text>
+  <text x="269.6877707974304" y="510.3122292025696" text-anchor="end" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Cloud / DevOps</text>
+  <text x="269.6877707974304" y="527.3122292025696" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#64748B">72/100</text>
+  <text x="195.0" y="330.00000000000006" text-anchor="end" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Evaluation</text>
+  <text x="195.0" y="347.00000000000006" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#64748B">80/100</text>
+  <text x="269.68777079743035" y="149.6877707974304" text-anchor="end" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Observability</text>
+  <text x="269.68777079743035" y="166.6877707974304" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#64748B">78/100</text>
+  <text x="450" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#172554">AI ENGINEERING</text>
+</svg>
